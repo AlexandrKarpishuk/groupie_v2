@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="25" id="fm4-vv-WtZ" customClass="POST_View_Cell" customModule="groupie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="224" height="25"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fm4-vv-WtZ" id="ppF-As-OvL">
+                <rect key="frame" x="0.0" y="0.0" width="224" height="24.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cjj-ib-16R">
+                        <rect key="frame" x="16" y="0.0" width="192" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="vTb-Ft-pMl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.90980392160000001" green="0.95294117649999999" blue="0.80784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="Cjj-ib-16R" firstAttribute="centerY" secondItem="ppF-As-OvL" secondAttribute="centerY" id="U6f-37-d8r"/>
+                    <constraint firstItem="Cjj-ib-16R" firstAttribute="top" secondItem="ppF-As-OvL" secondAttribute="top" id="aGt-4U-60x"/>
+                    <constraint firstItem="Cjj-ib-16R" firstAttribute="trailing" secondItem="ppF-As-OvL" secondAttribute="trailingMargin" id="tES-ka-bJT"/>
+                    <constraint firstItem="Cjj-ib-16R" firstAttribute="leading" secondItem="ppF-As-OvL" secondAttribute="leadingMargin" id="tou-2C-pqO"/>
+                    <constraint firstAttribute="bottom" secondItem="Cjj-ib-16R" secondAttribute="bottom" id="yLj-Ay-Jox"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="titleLabel" destination="Cjj-ib-16R" id="h8h-uP-8BK"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
